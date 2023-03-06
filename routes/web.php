@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controller\RecruitmentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('recruitments', RecruitmentController::class)->middleware(['auth', 'verified']);
+Auth::routes(['verify' => true]);
+
+Route::get('/recruitment', [ App\Http\Controllers\RecruitmentController::class, 'index' ]);
+Route::post('/recruitment', [ App\Http\Controllers\RecruitmentController::class, 'create' ]);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -14,7 +14,9 @@ class RecruitmentController extends Controller
      */
     public function index()
     {
-        //
+        $recruitments = Recruitment::all();
+
+        return view('recruitments.index',compact('recruitments'));
     }
 
     /**
@@ -24,7 +26,7 @@ class RecruitmentController extends Controller
      */
     public function create()
     {
-        //
+        echo "create";
     }
 
     /**
