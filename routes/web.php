@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\RecruitmentController;
+use App\Http\Controllers\RecruitmentController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,8 +23,8 @@ Route::get('/', function () {
 Route::resource('recruitments', RecruitmentController::class)->middleware(['auth', 'verified']);
 Auth::routes(['verify' => true]);
 
-Route::get('/recruitment', [ App\Http\Controllers\RecruitmentController::class, 'index' ]);
-Route::post('/recruitment', [ App\Http\Controllers\RecruitmentController::class, 'create' ]);
+Route::get('/recruitment', [RecruitmentController::class, 'index' ]);
+Route::post('/recruitment', [RecruitmentController::class, 'create' ]);
 
 Auth::routes();
 

@@ -11,6 +11,6 @@ class recruitment extends Model
 
     public function recruitments()
     {
-        return $this->hasMany('App\Models\Recruitment');
+        return $this->belongsTo('App\Models\user');
     }
 }

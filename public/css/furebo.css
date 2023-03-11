@@ -1,0 +1,191 @@
+.furebo-PC {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px dotted #333333;
+    background-color: #61616026;
+}
+.furebo-PS4PS5 {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px dotted #333333;
+    background-color: #61616026;
+}
+.furebo-XboxOne {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px dotted #333333;
+    background-color: #61616026;
+}
+
+.description {
+    padding: 38px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.inquiry {
+    font-size: 18px;
+    padding: 0px 0px 0px 730px;
+    letter-spacing: 2px;
+}
+.improvement {
+    font-size: 18px;
+    padding: 0px 0px 0px 710px;
+    letter-spacing: 2px;
+}
+.registration {
+    font-size: 18px;
+    padding: 30px 0px 30px 140px;
+    letter-spacing: 2px;
+}
+
+
+.model_name {
+    padding: 10px 10px 10px 38px;
+    letter-spacing: 2px;
+}
+.game_mode {
+    padding: 10px 10px 10px 38px;
+    letter-spacing: 2px;
+}
+.purpose {
+    padding: 10px 10px 10px 38px;
+    letter-spacing: 2px;
+}
+.applicant {
+    padding: 10px 10px 10px 38px;
+    letter-spacing: 2px;
+}
+.game_id {
+    padding: 10px 10px 10px 38px;
+    letter-spacing: 2px;
+}
+.content {
+    padding: 10px 10px 10px 38px;
+    letter-spacing: 2px;
+}
+textarea {
+    resize: none;
+    width:600px;
+    height:140px;
+  }
+  label {
+    vertical-align: top;
+    }
+.button {
+    margin: 30px 30px 25px 33px;
+    padding: 10px 70px
+}
+.period {
+    position: absolute;
+    bottom: 30px;
+    padding: 0px 10px 0px 290px;
+
+}
+
+
+
+
+
+.list {
+    font-size: 15px;
+    letter-spacing: 1px;
+    position:relative;
+    border-top:#006f27 solid 6px;  /*上の境界線の指定*/
+    border-bottom:#006f27 solid 6px;  /*下の境界線の指定*/
+    padding:10px 20px;
+    margin: 50px;
+    }
+.list:before {
+    content:"";
+    position:absolute;
+    top:-10px;  /*左の境界線を上にはみ出させる数値の指定*/
+    left:10px; /*左の境界線を内側に寄せる数値の指定*/
+    width:6px; /*左の境界線の太さの指定*/
+    height:calc(100% + 20px); /*左の境界線の長さの指定*/
+    background:#006f27; /*左の境界線の色の指定*/
+    }
+.list:after {
+    content:"";
+    position:absolute;
+    top:-10px;  /*右の境界線を上にはみ出させる数値の指定*/
+    right:10px; /*右の境界線を内側に寄せる数値の指定*/
+    width:6px; /*右の境界線の太さの指定*/
+    height:calc(100% + 20px); /*右の境界線の長さの指定*/
+    background:#006f27; /*右の境界線の色の指定*/
+    }
+
+
+.furebo-login-input {
+    border-radius: 2px;
+    border: solid 1px #b2b2b2;
+    background-color: #ffffff;
+}
+
+.furebo-check-label {
+    font-family: YuGo;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.furebo-require-input-label {
+    border-radius: 1px;
+    background-color: #e2001b;
+}
+
+.furebo-require-input-label-text {
+    font-family: YuGo;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.furebo-submit-button {
+    font-family: YuGo;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    background-color: #0fbe9f;
+}
+
+.furebo-login-text {
+    font-family: YuGo;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0fbe9f;
+}
+
+.furebo-header-container {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    background-color: #006cff;
+    position: fixed; /* ヘッダーを固定する */
+    top: 0; /* 上部から配置の基準位置を決める */
+    left: 0; /* 左から配置の基準位置を決める */
+    width: 100%; /* ヘッダーの横幅を指定する */
+    height: 40px; /* ヘッダーの高さを指定する */
+    padding: 30px; /* ヘッダー内側の余白を指定する(上下左右) */
+    background-color: #31a9ee; /* ヘッダーの背景色を指定する */
+    color: #000000; /* ヘッダーのフォントの色を指定する */
+}
+
+.furebo-header-fav-icon {
+    color: #191919;
+}
+
