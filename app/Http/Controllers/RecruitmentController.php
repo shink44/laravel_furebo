@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Recruitment;
 use Illuminate\Http\Request;
 
@@ -24,9 +23,20 @@ class RecruitmentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        echo "create";
+            $entryform = $request->only('model_name', 'game_mode', 'purpose', 'applicant', 'game_id', 'discord_id', 'content');
+            
+                $entry = new recruitment();
+	            $entry->model_name = $entryform["model_name"];
+	            $entry->game_mode = $entryform["game_mode"];
+	            $entry->purpose = $entryform["purpose"];
+                $entry->applicant = $entryform["applicant"];
+                $entry->game_id = $entryform["game_id"];
+                $entry->discord_id = $entryform["content"];
+	            $entry->save();
+
+	            return redirect('/recruitment');
     }
 
     /**

@@ -39,7 +39,9 @@
     letter-spacing: 2px;
 }
 
-
+select {
+    color: #757373;
+}
 .model_name {
     padding: 10px 10px 10px 38px;
     letter-spacing: 2px;
@@ -57,6 +59,10 @@
     letter-spacing: 2px;
 }
 .game_id {
+    padding: 10px 10px 10px 38px;
+    letter-spacing: 2px;
+}
+.discord_id {
     padding: 10px 10px 10px 38px;
     letter-spacing: 2px;
 }
@@ -88,30 +94,30 @@ textarea {
 
 
 .list {
-    font-size: 15px;
+    font-size:18px;
     letter-spacing: 1px;
     position:relative;
-    border-top:#006f27 solid 6px;  /*上の境界線の指定*/
-    border-bottom:#006f27 solid 6px;  /*下の境界線の指定*/
+    border-top:#006f27 solid 8px;  /*上の境界線の指定*/
+    border-bottom:#006f27 solid 8px;  /*下の境界線の指定*/
     padding:10px 20px;
     margin: 50px;
     }
 .list:before {
     content:"";
     position:absolute;
-    top:-10px;  /*左の境界線を上にはみ出させる数値の指定*/
+    top:-15px;  /*左の境界線を上にはみ出させる数値の指定*/
     left:10px; /*左の境界線を内側に寄せる数値の指定*/
-    width:6px; /*左の境界線の太さの指定*/
-    height:calc(100% + 20px); /*左の境界線の長さの指定*/
+    width:8px; /*左の境界線の太さの指定*/
+    height:calc(100% + 30px); /*左の境界線の長さの指定*/
     background:#006f27; /*左の境界線の色の指定*/
     }
 .list:after {
     content:"";
     position:absolute;
-    top:-10px;  /*右の境界線を上にはみ出させる数値の指定*/
+    top:-15px;  /*右の境界線を上にはみ出させる数値の指定*/
     right:10px; /*右の境界線を内側に寄せる数値の指定*/
-    width:6px; /*右の境界線の太さの指定*/
-    height:calc(100% + 20px); /*右の境界線の長さの指定*/
+    width:8px; /*右の境界線の太さの指定*/
+    height:calc(100% + 30px); /*右の境界線の長さの指定*/
     background:#006f27; /*右の境界線の色の指定*/
     }
 

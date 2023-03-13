@@ -16,16 +16,25 @@ use App\Http\Controllers\RecruitmentController;
 */
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+Route::get('/recruitment', [RecruitmentController::class, 'index' ]);
+Route::post('/create', [RecruitmentController::class, 'create' ]);
+
+
 
 Route::resource('recruitments', RecruitmentController::class)->middleware(['auth', 'verified']);
 Auth::routes(['verify' => true]);
-
-Route::get('/recruitment', [RecruitmentController::class, 'index' ]);
-Route::post('/recruitment', [RecruitmentController::class, 'create' ]);
-
 Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+
+

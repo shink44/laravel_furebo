@@ -48,7 +48,8 @@
 
 <!-- 書き込み一覧 -->
 
-<form method="post" action="{{ url('/create') }}">
+<form method="POST" action="{{ url('/create') }}">
+  @csrf
   <div class="list">
         <div class="model_name">機種名:
           <select name="model_name">
@@ -84,6 +85,9 @@
         </div>
         <div class="game_id">ゲーム ID:
 		        <input type="text" name="game_id" size="28" placeholder="PlayStation IDをお書きください">     
+	      </div>
+        <div class="discord_id">Discord ID:
+		        <input type="text" name="discord_id" size="28" placeholder="Discord IDをお書きください">     
 	      </div>
         <div class="content">
 		        <label>内容：</label>
