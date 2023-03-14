@@ -50,6 +50,10 @@ select {
     padding: 10px 10px 10px 38px;
     letter-spacing: 2px;
 }
+.rank {
+    padding: 10px 10px 10px 38px;
+    letter-spacing: 2px;
+}
 .purpose {
     padding: 10px 10px 10px 38px;
     letter-spacing: 2px;
@@ -120,6 +124,39 @@ textarea {
     height:calc(100% + 30px); /*右の境界線の長さの指定*/
     background:#006f27; /*右の境界線の色の指定*/
     }
+
+    .entry_sheet {
+        position:relative; 
+        padding:10px;
+        }
+        .entry_sheet:before {
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        border-left:#4e7bcc 1px solid; /*左の境界線の指定*/
+        border-top:#4e7bcc 1px solid; /*上の境界線の指定*/
+        }
+        .entry_sheet:after {
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        border-right:#4e7bcc 1px solid; /*右の境界線の指定*/
+        border-bottom:#4e7bcc 1px solid; /*下の境界線の指定*/
+        }
+        .entry_sheet p {
+        margin:0;
+        padding:0;
+        }
+        .entry_sheet p {
+        margin:0;
+        padding:0;
+        }
 
 
 .furebo-login-input {

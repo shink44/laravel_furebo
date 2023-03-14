@@ -8,25 +8,28 @@
 <h2>募集一覧</h2>
 
 @foreach ($recruitments as $recruitment)
-<div class="entry">
-	<h5>{{ $Recruitment->model_name }}</h5>
+<div class="entry__sheet">
+	<p class="mona">{{ $recruitment->model_name }}</p>
 	<div>
-		{{ $Recruitment->game_mode }}
+		{{ $recruitment->game_mode }}
 	</div>
 	<div>
-		{{ $Recruitment->purpose }}
+		{{ $recruitment->rank }}
 	</div>
 	<div>
-		{{ $Recruitment->applicant }}
+		{{ $recruitment->purpose }}
 	</div>
 	<div>
-		{{ $Recruitment->game_id }}
+		{{ $recruitment->applicant }}
 	</div>
 	<div>
-		{{ $Recruitment->discord_id }}
+		{{ $recruitment->game_id }}
 	</div>
 	<div>
-		{{ $Recruitment->content }}
+		{{ $recruitment->discord_id }}
+	</div>
+	<div>
+		{{ $recruitment->content }}
 	</div>
 </div>
 @endforeach

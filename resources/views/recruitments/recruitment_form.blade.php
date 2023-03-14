@@ -54,33 +54,40 @@
         <div class="model_name">機種名:
           <select name="model_name">
             <option value="" disabled selected style='display:none;'>機種名を選択してください</option>
-            <option value="値">PC</option>
-            <option value="値">PS4/PS5</option>
-            <option value="値">XboxOne</option>
+            <option value="PC">PC</option>
+            <option value="PS4/PS5">PS4/PS5</option>
+            <option value="XboxOne">XboxOne</option>
           </select>
         </div>
         <div class="game_mode">ゲームモード:
           <select name="game_mode">
           <option value="" disabled selected style='display:none;'>モードを選択してください</option>
-            <option value="値">バトルロワイヤル</option>
-            <option value="値">PS4/PS5</option>
-            <option value="値">XboxOne</option>
+            <option value="バトルロイヤル">バトルロイヤル</option>
+            <option value="アリーナ">アリーナ</option>
+            <option value="プライベートマッチ">プライベートマッチ</option>
+            <option value="射撃訓練場">射撃訓練場</option>
+          </select>
+        </div>
+        <div class="rank">マッチング:
+          <select name="rank">
+          <option value="" disabled selected style='display:none;'>マッチングを選択してください</option>
+            <option value="カジュアル">カジュアル</option>
+            <option value="ランクリーグ">ランクリーグ</option>
           </select>
         </div>
         <div class="purpose">目的要素:
           <select name="purpose">
           <option value="" disabled selected style='display:none;'>目的を選択してください</option>
-            <option value="値">フレンド</option>
-            <option value="値">協力</option>
-            <option value="値">対戦</option>
+            <option value="フレンド">フレンド</option>
+            <option value="協力">協力</option>
+            <option value="対戦">対戦</option>
          </select>
         </div>
         <div class="applicant">募集人数:
           <select name="applicant">
           <option value="" disabled selected style='display:none;'>募集人数を選択してください</option>
-            <option value="値">1人</option>
-            <option value="値">2人</option>
-            <option value="値"></option>
+            <option value="1人">1人</option>
+            <option value="2人">2人</option>
           </select>
         </div>
         <div class="game_id">ゲーム ID:

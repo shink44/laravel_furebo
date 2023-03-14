@@ -15,15 +15,15 @@ return new class extends Migration
     {
         Schema::create('recruitments', function (Blueprint $table) {
             $table->id();
-            $table->string('user_id');
-            $table->string('model_name');
-            $table->string('game_mode');
-            $table->string('purpose');
-            $table->string('period');
-            $table->string('game_id');
-            $table->string('discord_id');
-            $table->text('content');
-            $table->integer('applicant');
+            $table->integer('user_id')->default(1);
+            $table->string('model_name')->nullable();
+            $table->string('game_mode')->nullable();
+            $table->string('rank')->nullable();
+            $table->string('purpose')->nullable();
+            $table->string('game_id')->nullable(false);
+            $table->string('discord_id')->nullable();
+            $table->text('content')->nullable();
+            $table->string('applicant')->nullable();
             $table->timestamps();
         });
     }

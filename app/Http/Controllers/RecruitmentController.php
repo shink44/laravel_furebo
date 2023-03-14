@@ -13,7 +13,7 @@ class RecruitmentController extends Controller
      */
     public function index()
     {
-        $recruitments = Recruitment::all();
+        $recruitments = Recruitment::orderBy("id", "desc")->get();
 
         return view('recruitments.index',compact('recruitments'));
     }
@@ -25,15 +25,17 @@ class RecruitmentController extends Controller
      */
     public function create(Request $request)
     {
-            $entryform = $request->only('model_name', 'game_mode', 'purpose', 'applicant', 'game_id', 'discord_id', 'content');
+            $entryform = $request->only('model_name', 'game_mode', 'rank', 'purpose', 'applicant', 'game_id', 'discord_id', 'content');
             
                 $entry = new recruitment();
 	            $entry->model_name = $entryform["model_name"];
 	            $entry->game_mode = $entryform["game_mode"];
+                $entry->rank = $entryform["rank"];
 	            $entry->purpose = $entryform["purpose"];
                 $entry->applicant = $entryform["applicant"];
                 $entry->game_id = $entryform["game_id"];
-                $entry->discord_id = $entryform["content"];
+                $entry->discord_id = $entryform["discord_id"];
+                $entry->content = $entryform["content"];
 	            $entry->save();
 
 	            return redirect('/recruitment');
